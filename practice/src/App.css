@@ -1,0 +1,159 @@
+.wrapper {
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40rem;
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flex-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  gap: 4rem;
+}
+
+@media (max-width: 767px) {
+  .flex-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    padding: 1rem, 5rem;
+  }
+}
+
+
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.addTransactionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 1rem;
+  border: 1px solid green;
+}
+
+.textAmountWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+@media (max-width: 479px) {
+  .textAmountWrapper {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+.list li.minus {
+  border: 1px solid red;
+}
+
+.delete-btn {
+  background-color: #ffffff;
+  align-items: center;
+  font-size: 1.25rem;
+  color: rgb(190, 190, 190);
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputField {
+  padding: 10px;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+}
+
+.inputField:hover {
+  padding: 10px;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  width: 10rem;
+  background-color: #1c7ae6;
+  color: white;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  border-radius: 50rem;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #4294ff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inc-exp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.transactionList-wrapper {
+
+}
+
+.small-heading {
+  padding-bottom: 0px;
+}
